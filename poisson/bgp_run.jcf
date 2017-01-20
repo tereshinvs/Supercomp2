@@ -1,0 +1,8 @@
+# @ job_type = bluegene
+# @ class = large
+# @ output = $(jobid).out
+# @ error = $(jobid).err
+# @ wall_clock_limit = 00:15:00
+# @ bg_size = 32
+# @ queue
+/bgsys/drivers/ppcfloor/bin/mpirun -exe /gpfs/data/edu-cmc-stud16-615-09/dev/src/poisson/main -env OMP_NUM_THREADS=2 -mode DUAL
